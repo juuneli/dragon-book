@@ -1,0 +1,52 @@
+                 Executable File
+                        ^
+                target-machine code
+                        |
+         ---------------------------------
+        | Machine-Dependent Code Optimizer |
+         ----------------------------------
+                        ^
+                target-machine code
+                        |
+         ----------------------------------
+        |           Code Generator         |
+         ----------------------------------
+                        ^
+             intermediate representation
+                        |
+         ----------------------------------
+        |        Machine-Independent      |
+        |           Code Optimizer        |
+         ----------------------------------
+                        ^
+             intermediate representation
+                        |
+         ----------------------------------
+        |    Intermediate Code Generator   |
+         ----------------------------------
+                        ^
+                   syntax tree 
+                        |
+         ----------------------------------
+        |        Semantic Analyzer         |
+         ----------------------------------
+                        ^
+                   syntax tree 
+                        |
+         ----------------------------------
+        |          Syntax Analyzer         |
+         ----------------------------------
+                        ^
+                   token stream 
+                        |
+         ----------------------------------
+        |          Lexical Analyzer        |
+         ----------------------------------
+                        ^
+                  character stream 
+                        |
+                    Source File
+
+        Figure: Phases of a compiler
+            (Source File->Compiler Phases->Executable File)
+
